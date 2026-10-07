@@ -149,23 +149,23 @@ and add:
 
 ```toml
 [plugin]  
-prepend_previewers = [  
-  { url = "*.csv", run = "duckdb" },  
-  { url = "*.tsv", run = "duckdb" },  
-  { url = "*.json", run = "duckdb" },  
-  { url = "*.parquet", run = "duckdb" },  
-  { url = "*.txt", run = "duckdb" },  
-  { url = "*.xlsx", run = "duckdb" },  
+prepend_previewers = [
+  { url = "*.csv", run = "duckdb" },
+  { url = "*.tsv", run = "duckdb" },
+  { url = "*.json", run = "duckdb" },
+  { url = "*.parquet", run = "duckdb" },
+  { url = "*.txt", run = "duckdb" },
+  { url = "*.xlsx", run = "duckdb" },
   { url = "*.db", run = "duckdb" },
   { url = "*.duckdb", run = "duckdb" }
 ]
 
-prepend_preloaders = [  
-  { url = "*.csv", run = "duckdb", multi = false },  
-  { url = "*.tsv", run = "duckdb", multi = false },  
-  { url = "*.json", run = "duckdb", multi = false },  
+prepend_preloaders = [
+  { url = "*.csv", run = "duckdb", multi = false },
+  { url = "*.tsv", run = "duckdb", multi = false },
+  { url = "*.json", run = "duckdb", multi = false },
   { url = "*.parquet", run = "duckdb", multi = false },
-  { url = "*.txt", run = "duckdb", multi = false },  
+  { url = "*.txt", run = "duckdb", multi = false },
   { url = "*.xlsx", run = "duckdb", multi = false }
 ]
 ```
